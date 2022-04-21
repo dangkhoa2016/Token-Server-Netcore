@@ -1,0 +1,20 @@
+
+fetch('/eval', { method: 'post', body: 'content=accounts_helper.AccountNames()', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/eval', { method: 'post', body: 'content=accounts_helper.GetAccount("account-1.json")', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/eval', { method: 'post', body: 'content=replit_database.List("")', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/eval', { method: 'post', body: 'content=replit_database.List("test=t")', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/eval', { method: 'post', body: 'content=replit_database.Get("test=t")', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/eval', { method: 'post', body: 'content=replit_database.GetBody("test=t")', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/eval', { method: 'post', body: 'content=replit_database.GetAsJson("test=t")', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/eval', { method: 'post', body: 'content=token_helper.GetAccountTokenInfo("account-1.json")', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/eval', { method: 'post', body: 'content=token_helper.GetAccessToken("account-1.json")', headers: { 'content-type':'application/x-www-form-urlencoded' } }).then(res=>res.json()).then(res=>console.log(res))
+
+fetch('/token/account-1.json', { method: 'get', headers: { } }).then(res=>res.json()).then(res=>console.log(res))

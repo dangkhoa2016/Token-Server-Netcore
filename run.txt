@@ -1,0 +1,5 @@
+
+./dotnet run -p TokenServerNetcore
+
+window platform
+dotnet watch run
